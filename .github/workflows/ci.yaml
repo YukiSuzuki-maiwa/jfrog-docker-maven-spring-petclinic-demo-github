@@ -77,8 +77,11 @@ jobs:
       - name: Configure Maven to use Artifactory virtual repository based on branch and run tests, build and deploy
         env:
           # GitHub Actionsがデフォルトで設定している可能性のあるオプションを無効化
-          MAVEN_OPTS: ""
+          #MAVEN_OPTS: ""
+          MAVEN_OPTS: "-Dmaven.multiModuleProjectDirectory=$GITHUB_WORKSPACE"
         run: |
+          #.jfrog directory
+          rm -rf .jfrog
           # debug
           mvn -version
 
