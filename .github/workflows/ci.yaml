@@ -12,7 +12,7 @@ permissions:
   contents: read
 
 env: 
-  JFROG_PROJECT_KEY: "20260305-Suzuki"
+  JFROG_PROJECT_KEY: "suzu0305"
   MVN_BUILD_NAME: "maven-spring-petclinic"
   DOCKER_BUILD_NAME: "docker-spring-petclinic"
   MVN_REPO_PREFIX: "backend-maven"
