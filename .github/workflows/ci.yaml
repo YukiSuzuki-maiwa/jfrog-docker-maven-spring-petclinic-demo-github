@@ -11,7 +11,7 @@ permissions:
   # This is required for actions/checkout
   contents: read
 
-env:
+env: 
   JFROG_PROJECT_KEY: "20260305-Suzuki"
   MVN_BUILD_NAME: "maven-spring-petclinic"
   DOCKER_BUILD_NAME: "docker-spring-petclinic"
